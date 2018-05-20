@@ -20,7 +20,7 @@ fs.readFile('./tekst.txt', 'utf-8', function(err, data) {
     });
 });
 
-fs.readdir('../Zadanie-13.7-File_system__checking-environment', function(err, files) {
+fs.readdir('./', function(err, files) {
     if (err) throw err;
     console.log(files);
         fs.writeFile('./newlycreatedfile.txt', (files), function(err) {
